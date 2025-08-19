@@ -13,12 +13,22 @@
     
     <div class="image-container">
         <img src="./Rediscover-Pokemon-2-21-2025.png" alt="Pokemon Logo">
+        <p style="margin-top: 0px; font-size: 20px; color: black; text-align: center;">
+            Don’t know the Pokémon names? 👉 
+            <a href="https://pokemondb.net/sprites" target="_blank" style="color: orange; text-decoration: none;">
+              Check the full sprite list here
+            </a>
+          </p>
     </div>
     <div class="container">
+        <form onsubmit="fetchData(); return false;">
+
         <div class="input-container">
-            <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
-            <button onclick="fetchData()">Fetch Pokemon</button>
-        </div>
+                <input type="text" id="pokemonName" placeholder="Enter Pokemon name">
+                <button type="submit">Fetch Pokemon</button>
+              
+        </div>              </form>
+
         <img src="/placeholder.svg" alt="Pokemon Sprite" id="pokemonSprite" style="display: none;">
     </div> 
 </body>
